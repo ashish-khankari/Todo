@@ -77,7 +77,7 @@ export default function Todo() {
           <div key={index} className="task-item" onClick={() => markAsComplete(index)}>
             <p>{task}</p>
           </div>
-        )).reverse()} {/* Reverse the order of rendering */}
+        ))} 
         {showCompleted && completedTasks.map((task, index) => (
           <div key={index} className="task-item completed">
             <p>{task}</p>
